@@ -11,7 +11,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
     <>
       <Navbar />
       <div style={{ padding: "0 50px" }}>
-        <div>{children}</div>
+        <div className="min-h-screen">{children}</div>
       </div>
       <Footer />
     </>

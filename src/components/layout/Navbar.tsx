@@ -1,17 +1,23 @@
+import Image from "next/image";
+import CategoryDropdown from "./CatagoryDorpdown";
+import Dropdown from "./Dropdown";
+
 function Navbar() {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" className="flex items-center">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8 mr-3"
-            alt="Flowbite Logo"
+        <a href="/" className="flex items-center gap-7">
+          <Image
+            src="https://i.ibb.co/4NZ52d8/AOPola-Sy44-Fz-HE6a38s-Ue-2r-ZGB8dcc-Uh-BVT5-Bxku-J4-XA-s900-c-k-c0x00ffffff-no-rj.jpg"
+            width={70}
+            height={50}
+            alt="PCB LOGO"
           />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Flowbite
+          <span className="text-lg font-bold">
+            PC builder <br /> Bangladesh
           </span>
         </a>
+
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -47,12 +53,7 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                About
-              </a>
+              <CategoryDropdown />
             </li>
             <li>
               <a
@@ -62,21 +63,17 @@ function Navbar() {
                 Services
               </a>
             </li>
+
             <li>
               <a
                 href="#"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                Pricing
+                PC Builder
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Contact
-              </a>
+              <Dropdown />
             </li>
           </ul>
         </div>

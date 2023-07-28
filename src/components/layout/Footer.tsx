@@ -1,14 +1,17 @@
+import Image from "next/image";
+
 function Footer() {
   return (
-    <footer className="bg-white dark:bg-gray-900">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <footer className="bg-white dark:bg-gray-900vp ">
+      <div className="mx-auto w-full max-w-screen-xl  p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com/" className="flex items-center">
-              <img
-                src="https://flowbite.com/docs/images/logo.svg"
-                className="h-8 mr-3"
-                alt="FlowBite Logo"
+              <Image
+                src="https://i.ibb.co/4NZ52d8/AOPola-Sy44-Fz-HE6a38s-Ue-2r-ZGB8dcc-Uh-BVT5-Bxku-J4-XA-s900-c-k-c0x00ffffff-no-rj.jpg"
+                width={70}
+                height={50}
+                alt="PCB LOGO"
               />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 Flowbite
