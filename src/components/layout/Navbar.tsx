@@ -1,12 +1,16 @@
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 import CategoryDropdown from "./CatagoryDorpdown";
 import Dropdown from "./Dropdown";
 
 function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/" className="flex items-center gap-7">
+        <Link href="/" className="flex items-center gap-7">
           <Image
             src="https://i.ibb.co/4NZ52d8/AOPola-Sy44-Fz-HE6a38s-Ue-2r-ZGB8dcc-Uh-BVT5-Bxku-J4-XA-s900-c-k-c0x00ffffff-no-rj.jpg"
             width={70}
@@ -16,14 +20,14 @@ function Navbar() {
           <span className="text-lg font-bold">
             PC builder <br /> Bangladesh
           </span>
-        </a>
+        </Link>
 
         <button
-          data-collapse-toggle="navbar-default"
           type="button"
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-controls="navbar-default"
-          aria-expanded="false"
+          aria-expanded={isMobileMenuOpen ? "true" : "false"}
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -41,36 +45,40 @@ function Navbar() {
             />
           </svg>
         </button>
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+        <div
+          className={`${
+            isMobileMenuOpen ? "block" : "hidden"
+          } w-full md:block md:w-auto`}
+          id="navbar-default"
+        >
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+            <li className="">
+              <Link
+                href="/"
+                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 aria-current="page"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <CategoryDropdown />
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                href="/services"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Services
-              </a>
+              </Link>
             </li>
-
             <li>
-              <a
-                href="#"
+              <Link
+                href="/pc-builder"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 PC Builder
-              </a>
+              </Link>
             </li>
             <li>
               <Dropdown />
@@ -78,6 +86,7 @@ function Navbar() {
           </ul>
         </div>
       </div>
+      <hr />
     </nav>
   );
 }
