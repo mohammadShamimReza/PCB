@@ -1,6 +1,7 @@
 import BuildProduct from "@/components/part/BuildProduct";
 import { cpu } from "@/components/type/cpu";
-import { useAppSelector } from "@/redux/hooks";
+import { removeAll } from "@/redux/features/buildPc/BuildPc";
+import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { GetStaticProps } from "next";
 import Image from "next/image";
 
@@ -53,11 +54,13 @@ export const getStaticProps: GetStaticProps<featuredProps> = async () => {
 };
 function PcBuilder({ data }: { data: cpu[] }) {
   const build = useAppSelector((state) => state.build);
+  const dispatch = useAppDispatch();
   const allValuesNonZero = Object.values(build).every((value) => value !== 0);
   const handleButtonClick = () => {
     if (allValuesNonZero) {
       alert("pc build successfully");
     }
+    dispatch(removeAll());
   };
 
   return (
@@ -86,7 +89,9 @@ function PcBuilder({ data }: { data: cpu[] }) {
           <button
             onClick={handleButtonClick}
             disabled={!allValuesNonZero}
-            className="block w-56 py-4 text-center text-3xl font-medium text-white bg-indigo-600 rounded-lg shadow-md hover:bg-indigo-700 focus:ring-4 focus:outline-none focus:ring-indigo-300"
+            className={`inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-indigo-500 rounded-lg hover:bg-indigo-800  focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-60 ${
+              allValuesNonZero ? "cursor-pointer" : "cursor-not-allowed"
+            }`}
           >
             Build
           </button>

@@ -29,9 +29,19 @@ export const BuildPc = createSlice({
     add: (state, action: PayloadAction<Partial<buildPcState>>) => {
       return { ...state, ...action.payload };
     },
+    removeAll: (state) => {
+      state.CPU = 0;
+      state.Motherboard = 0;
+      state.RAM = 0;
+      state.PSU = 0;
+      state.Storage = 0;
+      state.Monitor = 0;
+      state.Mouse = 0;
+      state.Keyboard = 0;
+    },
   },
 });
 
-export const { add } = BuildPc.actions;
+export const { add, removeAll } = BuildPc.actions;
 
 export default BuildPc.reducer;

@@ -1,7 +1,6 @@
 import { cpu } from "@/components/type/cpu";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/router";
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -63,7 +62,7 @@ const ProductDetailPage = ({ data }: { data: cpu }) => {
           <p className="text-gray-800">Status: {data?.status}</p>
         </div>
       </div>
-      <div className="flex align-middle justify-center mt-24">
+      {/* <div className="flex align-middle justify-center mt-24">
         <Link
           href="#"
           className=" w-56 h-12 inline-flex items-center justify-between px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -85,7 +84,7 @@ const ProductDetailPage = ({ data }: { data: cpu }) => {
             />
           </svg>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
