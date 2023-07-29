@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { api } from "./API/apiSlice";
+import BuildPcReducer from "./features/buildPc/BuildPc";
 // ...
 
 export const store = configureStore({
   reducer: {
+    build: BuildPcReducer,
     [api.reducerPath]: api.reducer,
   },
   middleware: (getDefaultMiddleware) =>

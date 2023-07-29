@@ -37,46 +37,52 @@ const CategoryDropdown = () => {
       {isOpen && (
         <div className="absolute right-0 mt-2 py-2 w-48 bg-white border rounded-lg shadow-lg">
           <Link
-            href="#"
+            href={`/featuredCategory/CPU`}
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
           >
             CPU / Processor
           </Link>
           <Link
-            href="#"
+            href={`/featuredCategory/Mohterboard`}
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
           >
             Motherboard
           </Link>
           <Link
-            href="#"
+            href={`/featuredCategory/RAM`}
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
           >
             RAM
           </Link>
           <Link
-            href="#"
+            href={`/featuredCategory/PSU`}
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
           >
             Power Supply Unit
           </Link>
           <Link
-            href="#"
+            href={`/featuredCategory/Storage`}
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
           >
             Storage Device
           </Link>
           <Link
-            href="#"
+            href={`/featuredCategory/Monitor`}
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
           >
             Monitor
           </Link>
           <Link
-            href="#"
+            href={`/featuredCategory/Mouse`}
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
           >
-            Others
+            Mouse
+          </Link>
+          <Link
+            href={`/featuredCategory/Keyboard`}
+            className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
+          >
+            Keyboard
           </Link>
         </div>
       )}

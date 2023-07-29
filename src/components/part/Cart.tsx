@@ -16,7 +16,6 @@ function Cart({ data }: CartProps) {
   // const { data, error, isError, isFetching, isLoading, isSuccess } =
   //   useGetCpuQuery(undefined);
 
-  console.log(data);
 
   function getRandomNumber(min: number, max: number): number {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -35,7 +34,6 @@ function Cart({ data }: CartProps) {
     randomNumbers.includes(item.id)
   );
 
-  console.log(dataWithRandomIds);
 
   return (
     <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-24 ">
