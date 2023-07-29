@@ -8,7 +8,7 @@ function FeaturedCategory() {
 
   console.log(data);
   return (
-    <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-24 mx-auto w-full max-w-screen-xl">
+    <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-24 mx-auto w-full max-w-screen-xl ">
       {data?.map((product: Cpu) => (
         <div
           key={product?.id}

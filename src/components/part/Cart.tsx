@@ -32,6 +32,8 @@ function Cart() {
                 </h5>
               </a>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Category: {product?.category}
+                <br />
                 Price: ${product?.price}
                 <br />
                 Rating: {product?.rating} *

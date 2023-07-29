@@ -4,7 +4,7 @@ import React from "react";
 
 const categories = [
   {
-    name: "CPU / Processor",
+    name: "CPU",
     link: "https://i.ibb.co/kMcqRWW/circuit-cyberspace-closeup-with-neon-lights.jpg",
   },
   {
@@ -47,7 +47,7 @@ const FeaturedCategories: React.FC = () => {
         {categories.map((category) => (
           <Link
             key={category.name}
-            href={`featuredCategory/${category.name}`}
+            href={`/featuredCategory/${category.name}`}
             passHref
           >
             <div className="group cursor-pointer">
