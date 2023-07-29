@@ -2,14 +2,13 @@ import { useGetCpuQuery } from "@/redux/features/cart/CartAPi";
 import Image from "next/image";
 import Link from "next/link";
 
-
-function Cart() {
+function FeaturedCategory() {
   const { data, error, isError, isFetching, isLoading, isSuccess } =
     useGetCpuQuery(undefined);
 
   console.log(data);
   return (
-    <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-24 ">
+    <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-24 mx-auto w-full max-w-screen-xl">
       {data?.map((product: Cpu) => (
         <div
           key={product?.id}
@@ -67,4 +66,4 @@ function Cart() {
   );
 }
 
-export default Cart;
+export default FeaturedCategory;
