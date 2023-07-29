@@ -1,4 +1,5 @@
 // components/CategoryDropdown.tsx
+import Link from "next/link";
 import { RefObject, useEffect, useRef, useState } from "react";
 
 const CategoryDropdown = () => {
@@ -35,48 +36,48 @@ const CategoryDropdown = () => {
       </button>
       {isOpen && (
         <div className="absolute right-0 mt-2 py-2 w-48 bg-white border rounded-lg shadow-lg">
-          <a
+          <Link
             href="#"
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
           >
             CPU / Processor
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
           >
             Motherboard
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
           >
             RAM
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
           >
             Power Supply Unit
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
           >
             Storage Device
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
           >
             Monitor
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
           >
             Others
-          </a>
+          </Link>
         </div>
       )}
     </div>

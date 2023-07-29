@@ -1,5 +1,6 @@
 // components/Dropdown.tsx
 import Image from "next/image";
+import Link from "next/link";
 import { RefObject, useEffect, useRef, useState } from "react";
 
 const Dropdown = () => {
@@ -41,18 +42,18 @@ const Dropdown = () => {
       </button>
       {isOpen && (
         <div className="absolute right-0 mt-2 py-2 w-48 bg-white border rounded-lg shadow-lg">
-          <a
+          <Link
             href="#"
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
           >
             Sign In
-          </a>
-          <a
+          </Link>
+          <Link
             href="#"
             className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
           >
             Sign Up
-          </a>
+          </Link>
         </div>
       )}
     </div>

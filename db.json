@@ -1,9 +1,9 @@
 {
-  "cpu": [
+  "data": [
     {
       "id": 1,
       "image": "https://i.ibb.co/QpYfyT3/smart-microchip-background-motherboard-closeup-technology.jpg",
-      "productName": "Intel Core i9-11900K",
+      "Name": "Intel Core i9-11900K",
       "price": 599.99,
       "category": "CPU",
       "status": "instock",
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "image": "https://i.ibb.co/kMcqRWW/circuit-cyberspace-closeup-with-neon-lights.jpg",
-      "productName": "AMD Ryzen 9 5950X",
+      "Name": "AMD Ryzen 9 5950X",
       "price": 749.99,
       "category": "CPU",
       "status": "instock",
@@ -21,7 +21,7 @@
     {
       "id": 3,
       "image": "https://i.ibb.co/vzHCHgG/ai-technology-microchip-background-digital-transformation-concept.jpg",
-      "productName": "Intel Core i7-11700K",
+      "Name": "Intel Core i7-11700K",
       "price": 429.99,
       "category": "CPU",
       "status": "instock",
@@ -30,7 +30,7 @@
     {
       "id": 4,
       "image": "https://i.ibb.co/vcGDhLC/5128714.jpg",
-      "productName": "AMD Ryzen 7 5800X",
+      "Name": "AMD Ryzen 7 5800X",
       "price": 399.99,
       "category": "CPU",
       "status": "instock",
@@ -39,7 +39,7 @@
     {
       "id": 5,
       "image": "https://i.ibb.co/dBghgSM/13109417-5126124.jpg",
-      "productName": "Intel Core i5-11600K",
+      "Name": "Intel Core i5-11600K",
       "price": 299.99,
       "category": "CPU",
       "status": "instock",
@@ -48,7 +48,7 @@
     {
       "id": 6,
       "image": "https://i.ibb.co/S6fkWMM/13109523-5111951.jpg",
-      "productName": "AMD Ryzen 5 5600X",
+      "Name": "AMD Ryzen 5 5600X",
       "price": 259.99,
       "category": "CPU",
       "status": "instock",
@@ -57,7 +57,7 @@
     {
       "id": 7,
       "image": "https://i.ibb.co/QpYfyT3/smart-microchip-background-motherboard-closeup-technology.jpg",
-      "productName": "Intel Core i9-10900K",
+      "Name": "Intel Core i9-10900K",
       "price": 529.99,
       "category": "CPU",
       "status": "instock",
@@ -66,7 +66,7 @@
     {
       "id": 8,
       "image": "https://i.ibb.co/kMcqRWW/circuit-cyberspace-closeup-with-neon-lights.jpg",
-      "productName": "AMD Ryzen 9 5900X",
+      "Name": "AMD Ryzen 9 5900X",
       "price": 679.99,
       "category": "CPU",
       "status": "instock",
@@ -75,7 +75,7 @@
     {
       "id": 9,
       "image": "https://i.ibb.co/vzHCHgG/ai-technology-microchip-background-digital-transformation-concept.jpg",
-      "productName": "Intel Core i7-10700K",
+      "Name": "Intel Core i7-10700K",
       "price": 349.99,
       "category": "CPU",
       "status": "instock",
@@ -84,7 +84,7 @@
     {
       "id": 10,
       "image": "https://i.ibb.co/vcGDhLC/5128714.jpg",
-      "productName": "AMD Ryzen 7 5800",
+      "Name": "AMD Ryzen 7 5800",
       "price": 349.99,
       "category": "CPU",
       "status": "instock",
@@ -93,7 +93,7 @@
     {
       "id": 11,
       "image": "https://i.ibb.co/dBghgSM/13109417-5126124.jpg",
-      "productName": "Intel Core i5-10600K",
+      "Name": "Intel Core i5-10600K",
       "price": 249.99,
       "category": "CPU",
       "status": "instock",
@@ -102,11 +102,750 @@
     {
       "id": 12,
       "image": "https://i.ibb.co/S6fkWMM/13109523-5111951.jpg",
-      "productName": "AMD Ryzen 5 5600",
+      "Name": "AMD Ryzen 5 5600",
       "price": 229.99,
       "category": "CPU",
       "status": "instock",
       "rating": 4.3
+    },
+    {
+      "id": 13,
+      "image": "https://i.ibb.co/ZT8XyVf/download.jpg",
+      "Name": "ASUS ROG Strix Z590-E Gaming",
+      "price": 329.99,
+      "category": "Motherboard",
+      "status": "instock",
+      "rating": 4.7
+    },
+    {
+      "id": 14,
+      "image": "https://i.ibb.co/8d741qq/download-1.jpg",
+      "Name": "GIGABYTE Z590 AORUS Elite AX",
+      "price": 239.99,
+      "category": "Motherboard",
+      "status": "instock",
+      "rating": 4.6
+    },
+    {
+      "id": 15,
+      "image": "https://i.ibb.co/yd2yq1f/download-2.jpg",
+      "Name": "MSI MPG B550 GAMING CARBON WIFI",
+      "price": 189.99,
+      "category": "Motherboard",
+      "status": "instock",
+      "rating": 4.5
+    },
+    {
+      "id": 16,
+      "image": "https://i.ibb.co/vsJmCKV/download-3.jpg",
+      "Name": "ASRock B550M-ITX/ac",
+      "price": 129.99,
+      "category": "Motherboard",
+      "status": "instock",
+      "rating": 4.4
+    },
+    {
+      "id": 17,
+      "image": "https://i.ibb.co/CnCHVKK/download-4.jpg",
+      "Name": "ASUS Prime X570-P",
+      "price": 189.99,
+      "category": "Motherboard",
+      "status": "instock",
+      "rating": 4.3
+    },
+    {
+      "id": 18,
+      "image": "https://i.ibb.co/q0d35CK/download-5.jpg",
+      "Name": "GIGABYTE B450 AORUS PRO WIFI",
+      "price": 119.99,
+      "category": "Motherboard",
+      "status": "instock",
+      "rating": 4.2
+    },
+    {
+      "id": 19,
+      "image": "https://i.ibb.co/j5j5LG0/download-6.jpg",
+      "Name": "MSI MAG X570 TOMAHAWK WIFI",
+      "price": 249.99,
+      "category": "Motherboard",
+      "status": "instock",
+      "rating": 4.8
+    },
+    {
+      "id": 20,
+      "image": "https://i.ibb.co/Z6mzZNK/download-7.jpg",
+      "Name": "ASRock X570 Phantom Gaming 4",
+      "price": 169.99,
+      "category": "Motherboard",
+      "status": "instock",
+      "rating": 4.5
+    },
+    {
+      "id": 21,
+      "image": "https://i.ibb.co/74VBRFQ/download-8.jpg",
+      "Name": "ASUS TUF B450-PLUS GAMING",
+      "price": 89.99,
+      "category": "Motherboard",
+      "status": "instock",
+      "rating": 4.0
+    },
+    {
+      "id": 22,
+      "image": "https://i.ibb.co/b5ywypW/download-9.jpg",
+      "Name": "GIGABYTE B450M DS3H",
+      "price": 74.99,
+      "category": "Motherboard",
+      "status": "instock",
+      "rating": 4.1
+    },
+    {
+      "id": 23,
+      "image": "https://i.ibb.co/F4k61zf/download-10.jpg",
+      "Name": "MSI B450 TOMAHAWK MAX",
+      "price": 99.99,
+      "category": "Motherboard",
+      "status": "instock",
+      "rating": 4.3
+    },
+    {
+      "id": 24,
+      "image": "https://i.ibb.co/mTCzF8H/images.jpg",
+      "Name": "ASRock B450M Steel Legend",
+      "price": 84.99,
+      "category": "Motherboard",
+      "status": "instock",
+      "rating": 4.2
+    },
+    {
+      "id": 25,
+      "image": "https://i.ibb.co/PFjNXX9/images-11.jpg",
+      "Name": "Corsair Vengeance LPX 16GB (2x8GB) DDR4 3200MHz",
+      "price": 89.99,
+      "category": "RAM",
+      "status": "instock",
+      "rating": 4.7
+    },
+    {
+      "id": 26,
+      "image": "https://i.ibb.co/CWs4y31/images-9.jpg",
+      "Name": "G.SKILL Ripjaws V Series 16GB (2x8GB) DDR4 3600MHz",
+      "price": 94.99,
+      "category": "RAM",
+      "status": "instock",
+      "rating": 4.8
+    },
+    {
+      "id": 27,
+      "image": "https://i.ibb.co/d4T4QyR/images-10.jpg",
+      "Name": "Crucial Ballistix 32GB (2x16GB) DDR4 3200MHz",
+      "price": 159.99,
+      "category": "RAM",
+      "status": "instock",
+      "rating": 4.6
+    },
+    {
+      "id": 28,
+      "image": "https://i.ibb.co/K5PJj5d/images-8.jpg",
+      "Name": "Kingston HyperX Fury 8GB DDR4 2666MHz",
+      "price": 49.99,
+      "category": "RAM",
+      "status": "instock",
+      "rating": 4.4
+    },
+    {
+      "id": 29,
+      "image": "https://i.ibb.co/S6mtBLw/images-7.jpg",
+      "Name": "TEAMGROUP T-Force Delta RGB 16GB (2x8GB) DDR4 3000MHz",
+      "price": 84.99,
+      "category": "RAM",
+      "status": "instock",
+      "rating": 4.5
+    },
+    {
+      "id": 30,
+      "image": "https://i.ibb.co/WfC0WFX/images-6.jpg",
+      "Name": "Corsair Vengeance RGB Pro 32GB (2x16GB) DDR4 3600MHz",
+      "price": 179.99,
+      "category": "RAM",
+      "status": "instock",
+      "rating": 4.9
+    },
+    {
+      "id": 31,
+      "image": "https://i.ibb.co/HB019Kr/images-5.jpg",
+      "Name": "Crucial Ballistix MAX 64GB (2x32GB) DDR4 4000MHz",
+      "price": 329.99,
+      "category": "RAM",
+      "status": "instock",
+      "rating": 4.8
+    },
+    {
+      "id": 32,
+      "image": "https://i.ibb.co/VxZfbNY/images-4.jpg",
+      "Name": "G.SKILL Trident Z RGB 32GB (2x16GB) DDR4 3200MHz",
+      "price": 179.99,
+      "category": "RAM",
+      "status": "instock",
+      "rating": 4.7
+    },
+    {
+      "id": 33,
+      "image": "https://i.ibb.co/cC50fFH/images-3.jpg",
+      "Name": "Corsair Dominator Platinum RGB 64GB (4x16GB) DDR4 3600MHz",
+      "price": 399.99,
+      "category": "RAM",
+      "status": "instock",
+      "rating": 4.9
+    },
+    {
+      "id": 34,
+      "image": "https://i.ibb.co/4S8MN0H/images-2.jpg",
+      "Name": "TEAMGROUP T-Force XCALIBUR RGB 16GB (2x8GB) DDR4 4000MHz",
+      "price": 124.99,
+      "category": "RAM",
+      "status": "instock",
+      "rating": 4.6
+    },
+    {
+      "id": 35,
+      "image": "https://i.ibb.co/4g6429G/images.jpg",
+      "Name": "Patriot Viper Steel Series 32GB (2x16GB) DDR4 3600MHz",
+      "price": 139.99,
+      "category": "RAM",
+      "status": "instock",
+      "rating": 4.5
+    },
+    {
+      "id": 36,
+      "image": "https://i.ibb.co/Mp768f7/images-1.jpg",
+      "Name": "ADATA XPG Spectrix D50 16GB (2x8GB) DDR4 3200MHz",
+      "price": 89.99,
+      "category": "RAM",
+      "status": "instock",
+      "rating": 4.4
+    },
+    {
+      "id": 37,
+      "image": "https://i.ibb.co/VDRCZD0/download.jpg",
+      "Name": "EVGA 600 BQ, 80+ Bronze 600W",
+      "price": 64.99,
+      "category": "PSU",
+      "status": "instock",
+      "rating": 4.7
+    },
+    {
+      "id": 38,
+      "image": "https://i.ibb.co/rm0gsF1/download-1.jpg",
+      "Name": "Corsair CX Series 650 Watt 80+ Bronze",
+      "price": 79.99,
+      "category": "PSU",
+      "status": "instock",
+      "rating": 4.8
+    },
+    {
+      "id": 39,
+      "image": "https://i.ibb.co/L15g3Fk/download-2.jpg",
+      "Name": "Seasonic FOCUS GM-650, 80+ Gold 650W",
+      "price": 89.99,
+      "category": "PSU",
+      "status": "instock",
+      "rating": 4.6
+    },
+    {
+      "id": 40,
+      "image": "https://i.ibb.co/WnP7V32/download-3.jpg",
+      "Name": "Thermaltake Smart 700W 80+ White",
+      "price": 59.99,
+      "category": "PSU",
+      "status": "instock",
+      "rating": 4.4
+    },
+    {
+      "id": 41,
+      "image": "https://i.ibb.co/8mvGTdx/download-4.jpg",
+      "Name": "NZXT C750 - 750W 80+ Gold Fully Modular",
+      "price": 119.99,
+      "category": "PSU",
+      "status": "instock",
+      "rating": 4.5
+    },
+    {
+      "id": 42,
+      "image": "https://i.ibb.co/bKQWvVh/download-5.jpg",
+      "Name": "Cooler Master MWE Gold 650 V2 80+ Gold",
+      "price": 89.99,
+      "category": "PSU",
+      "status": "instock",
+      "rating": 4.9
+    },
+    {
+      "id": 43,
+      "image": "https://i.ibb.co/8cTcKcZ/download-6.jpg",
+      "Name": "Rosewill Glacier Series 700W 80+ Bronze",
+      "price": 74.99,
+      "category": "PSU",
+      "status": "instock",
+      "rating": 4.8
+    },
+    {
+      "id": 44,
+      "image": "https://i.ibb.co/WcSNWnj/download-7.jpg",
+      "Name": "be quiet! Straight Power 11 850W 80+ Platinum",
+      "price": 159.99,
+      "category": "PSU",
+      "status": "instock",
+      "rating": 4.7
+    },
+    {
+      "id": 45,
+      "image": "https://i.ibb.co/z7nBZ2w/download-8.jpg",
+      "Name": "Antec Earthwatts Gold Pro 650W 80+ Gold",
+      "price": 94.99,
+      "category": "PSU",
+      "status": "instock",
+      "rating": 4.9
+    },
+    {
+      "id": 46,
+      "image": "https://i.ibb.co/5j3VsjM/download-9.jpg",
+      "Name": "SilverStone Technology ET650-G 650W 80+ Gold",
+      "price": 109.99,
+      "category": "PSU",
+      "status": "instock",
+      "rating": 4.6
+    },
+    {
+      "id": 47,
+      "image": "https://i.ibb.co/8cTcKcZ/download-6.jpg",
+      "Name": "Fractal Design Ion SFX-L 650G 650W 80+ Gold",
+      "price": 129.99,
+      "category": "PSU",
+      "status": "instock",
+      "rating": 4.5
+    },
+    {
+      "id": 47,
+      "image": "https://i.ibb.co/m4vCcQy/download-11.jpg",
+      "Name": "Enermax Revolution D.F. 650W 80+ Gold",
+      "price": 94.99,
+      "category": "PSU",
+      "status": "instock",
+      "rating": 4.4
+    },
+    {
+      "id": 48,
+      "image": "https://i.ibb.co/qsQtYFQ/download-11.jpg",
+      "Name": "Samsung 970 EVO 1TB NVMe SSD",
+      "price": 169.99,
+      "category": "Storage",
+      "status": "instock",
+      "rating": 4.8
+    },
+    {
+      "id": 49,
+      "image": "https://i.ibb.co/64vtThY/download-9.jpg",
+      "Name": "WD Blue 2TB SATA SSD",
+      "price": 209.99,
+      "category": "Storage",
+      "status": "instock",
+      "rating": 4.7
+    },
+    {
+      "id": 50,
+      "image": "https://i.ibb.co/X4BTM16/download-10.jpg",
+      "Name": "Seagate BarraCuda 4TB Internal HDD",
+      "price": 109.99,
+      "category": "Storage",
+      "status": "instock",
+      "rating": 4.6
+    },
+    {
+      "id": 51,
+      "image": "https://i.ibb.co/pjdZQJt/download-8.jpg",
+      "Name": "Crucial MX500 500GB SATA SSD",
+      "price": 74.99,
+      "category": "Storage",
+      "status": "instock",
+      "rating": 4.5
+    },
+    {
+      "id": 52,
+      "image": "https://i.ibb.co/r5H5sPt/download-7.jpg",
+      "Name": "SanDisk Extreme Pro 1TB Portable SSD",
+      "price": 199.99,
+      "category": "Storage",
+      "status": "instock",
+      "rating": 4.9
+    },
+    {
+      "id": 53,
+      "image": "https://i.ibb.co/mSsrsS7/download-6.jpg",
+      "Name": "Toshiba X300 6TB Internal HDD",
+      "price": 164.99,
+      "category": "Storage",
+      "status": "instock",
+      "rating": 4.8
+    },
+    {
+      "id": 54,
+      "image": "https://i.ibb.co/m8w5mtB/download-4.jpg",
+      "Name": "ADATA SU800 1TB 3D-NAND SSD",
+      "price": 89.99,
+      "category": "Storage",
+      "status": "instock",
+      "rating": 4.7
+    },
+    {
+      "id": 55,
+      "image": "https://i.ibb.co/GtwjHdT/download-3.jpg",
+      "Name": "Seagate Expansion 4TB Portable HDD",
+      "price": 94.99,
+      "category": "Storage",
+      "status": "instock",
+      "rating": 4.6
+    },
+    {
+      "id": 56,
+      "image": "https://i.ibb.co/SnF126Q/download-2.jpg",
+      "Name": "Corsair MP600 2TB NVMe SSD",
+      "price": 259.99,
+      "category": "Storage",
+      "status": "instock",
+      "rating": 4.5
+    },
+    {
+      "id": 57,
+      "image": "https://i.ibb.co/KmWyXrD/download.jpg",
+      "Name": "Western Digital Black 1TB NVMe SSD",
+      "price": 189.99,
+      "category": "Storage",
+      "status": "instock",
+      "rating": 4.4
+    },
+    {
+      "id": 58,
+      "image": "https://i.ibb.co/XDDcxxv/download-1.jpg",
+      "Name": "Samsung T5 500GB Portable SSD",
+      "price": 89.99,
+      "category": "Storage",
+      "status": "instock",
+      "rating": 4.3
+    },
+    {
+      "id": 59,
+      "image": "https://i.ibb.co/XDDcxxv/download-1.jpg",
+      "Name": "Seagate IronWolf 8TB NAS HDD",
+      "price": 279.99,
+      "category": "Storage",
+      "status": "instock",
+      "rating": 4.2
+    },
+    {
+      "id": 60,
+      "image": "https://i.ibb.co/sg3jfWd/download.jpg",
+      "Name": "ASUS ROG Swift PG279Q 27-Inch 1440p IPS Gaming Monitor",
+      "price": 599.99,
+      "category": "Monitor",
+      "status": "instock",
+      "rating": 4.8
+    },
+    {
+      "id": 61,
+      "image": "https://i.ibb.co/5xthjZ0/download-1.jpg",
+      "Name": "LG 27GL850-B 27-Inch 1440p Nano IPS Gaming Monitor",
+      "price": 499.99,
+      "category": "Monitor",
+      "status": "instock",
+      "rating": 4.7
+    },
+    {
+      "id": 62,
+      "image": "https://i.ibb.co/JpC0wSm/download-2.jpg",
+      "Name": "AOC CQ32G1 32-Inch 1440p Curved Gaming Monitor",
+      "price": 349.99,
+      "category": "Monitor",
+      "status": "instock",
+      "rating": 4.6
+    },
+    {
+      "id": 63,
+      "image": "https://i.ibb.co/0nZWnSf/download-3.jpg",
+      "Name": "Dell S2721QS 27-Inch 4K UHD IPS Monitor",
+      "price": 349.99,
+      "category": "Monitor",
+      "status": "instock",
+      "rating": 4.5
+    },
+    {
+      "id": 64,
+      "image": "https://i.ibb.co/dmTJxng/download-4.jpg",
+      "Name": "Samsung Odyssey G7 32-Inch 1440p 240Hz Curved Gaming Monitor",
+      "price": 699.99,
+      "category": "Monitor",
+      "status": "instock",
+      "rating": 4.9
+    },
+    {
+      "id": 65,
+      "image": "https://i.ibb.co/n8nB6tQ/download-5.jpg",
+      "Name": "MSI Optix MAG241C 24-Inch 1080p Curved Gaming Monitor",
+      "price": 229.99,
+      "category": "Monitor",
+      "status": "instock",
+      "rating": 4.8
+    },
+    {
+      "id": 66,
+      "image": "https://i.ibb.co/WxpZyKn/download-6.jpg",
+      "Name": "BenQ PD2700U 27-Inch 4K UHD IPS Designer Monitor",
+      "price": 399.99,
+      "category": "Monitor",
+      "status": "instock",
+      "rating": 4.7
+    },
+    {
+      "id": 67,
+      "image": "https://i.ibb.co/dQ9yx59/download-7.jpg",
+      "Name": "LG 34WN80C-B 34-Inch 3440x1440 UltraWide QHD IPS Monitor",
+      "price": 599.99,
+      "category": "Monitor",
+      "status": "instock",
+      "rating": 4.6
+    },
+    {
+      "id": 67,
+      "image": "https://i.ibb.co/pyXCb5R/download-8.jpg",
+      "Name": "ViewSonic VX2457-MHD 24-Inch 1080p Gaming Monitor",
+      "price": 179.99,
+      "category": "Monitor",
+      "status": "instock",
+      "rating": 4.5
+    },
+    {
+      "id": 68,
+      "image": "https://i.ibb.co/jy7MNL6/images.jpg",
+      "Name": "Acer R240HY 23.8-Inch 1080p IPS Monitor",
+      "price": 129.99,
+      "category": "Monitor",
+      "status": "instock",
+      "rating": 4.4
+    },
+    {
+      "id": 69,
+      "image": "https://i.ibb.co/7YxHGrv/download-9.jpg",
+      "Name": "Logitech G502 HERO High Performance Gaming Mouse",
+      "price": 59.99,
+      "category": "Mouse",
+      "status": "instock",
+      "rating": 4.8
+    },
+    {
+      "id": 70,
+      "image": "https://i.ibb.co/R4Z4jNq/download-10.jpg",
+      "Name": "Razer DeathAdder V2 Pro Wireless Gaming Mouse",
+      "price": 129.99,
+      "category": "Mouse",
+      "status": "instock",
+      "rating": 4.7
+    },
+    {
+      "id": 71,
+      "image": "https://i.ibb.co/9YVwDcj/download-11.jpg",
+      "Name": "SteelSeries Rival 600 Gaming Mouse",
+      "price": 79.99,
+      "category": "Mouse",
+      "status": "instock",
+      "rating": 4.6
+    },
+    {
+      "id": 72,
+      "image": "https://i.ibb.co/cXvjGb9/download-12.jpg",
+      "Name": "Corsair Nightsword RGB Gaming Mouse",
+      "price": 69.99,
+      "category": "Mouse",
+      "status": "instock",
+      "rating": 4.5
+    },
+    {
+      "id": 73,
+      "image": "https://i.ibb.co/2PfTDJN/images.jpg",
+      "Name": "Logitech MX Master 3 Advanced Wireless Mouse",
+      "price": 99.99,
+      "category": "Mouse",
+      "status": "instock",
+      "rating": 4.9
+    },
+    {
+      "id": 74,
+      "image": "https://i.ibb.co/P5G2QX1/images-1.jpg",
+      "Name": "Razer Naga Trinity Gaming Mouse",
+      "price": 99.99,
+      "category": "Mouse",
+      "status": "instock",
+      "rating": 4.8
+    },
+    {
+      "id": 75,
+      "image": "https://i.ibb.co/6sDg9qp/images-2.jpg",
+      "Name": "Logitech G Pro Wireless Gaming Mouse",
+      "price": 129.99,
+      "category": "Mouse",
+      "status": "instock",
+      "rating": 4.7
+    },
+    {
+      "id": 76,
+      "image": "https://i.ibb.co/NFHnCcz/images-3.jpg",
+      "Name": "SteelSeries Sensei Ten Gaming Mouse",
+      "price": 69.99,
+      "category": "Mouse",
+      "status": "instock",
+      "rating": 4.6
+    },
+    {
+      "id": 77,
+      "image": "https://i.ibb.co/V3FhHg6/images-4.jpg",
+      "Name": "HyperX Pulsefire FPS Pro RGB Gaming Mouse",
+      "price": 39.99,
+      "category": "Mouse",
+      "status": "instock",
+      "rating": 4.5
+    },
+    {
+      "id": 78,
+      "image": "https://i.ibb.co/K5d8M5L/images-3.jpg",
+      "Name": "Corsair Harpoon RGB Wireless Gaming Mouse",
+      "price": 49.99,
+      "category": "Mouse",
+      "status": "instock",
+      "rating": 4.4
+    },
+    {
+      "id": 79,
+      "image": "https://i.ibb.co/3d3yFJM/images-5.jpg",
+      "Name": "Razer Basilisk X HyperSpeed Wireless Gaming Mouse",
+      "price": 59.99,
+      "category": "Mouse",
+      "status": "instock",
+      "rating": 4.3
+    },
+    {
+      "id": 80,
+      "image": "https://i.ibb.co/J2jx9h8/images-6.jpg",
+      "Name": "Logitech G203 Lightsync Gaming Mouse",
+      "price": 29.99,
+      "category": "Mouse",
+      "status": "instock",
+      "rating": 4.2
+    },
+
+    {
+      "id": 81,
+      "image": "https://i.ibb.co/XzNbRw9/download.jpg",
+      "Name": "Corsair K95 RGB Platinum XT Mechanical Gaming Keyboard",
+      "price": 199.99,
+      "category": "Keyboard",
+      "status": "instock",
+      "rating": 4.8
+    },
+    {
+      "id": 82,
+      "image": "https://i.ibb.co/dJZ869H/download-1.jpg",
+      "Name": "Logitech G Pro X Mechanical Gaming Keyboard",
+      "price": 149.99,
+      "category": "Keyboard",
+      "status": "instock",
+      "rating": 4.7
+    },
+    {
+      "id": 83,
+      "image": "https://i.ibb.co/g9rLfdL/download-2.jpg",
+      "Name": "Razer Huntsman Elite Mechanical Gaming Keyboard",
+      "price": 199.99,
+      "category": "Keyboard",
+      "status": "instock",
+      "rating": 4.6
+    },
+    {
+      "id": 84,
+      "image": "https://i.ibb.co/PrF6hKz/download-3.jpg",
+      "Name": "SteelSeries Apex Pro TKL Mechanical Gaming Keyboard",
+      "price": 179.99,
+      "category": "Keyboard",
+      "status": "instock",
+      "rating": 4.5
+    },
+    {
+      "id": 85,
+      "image": "https://i.ibb.co/rMhKCzn/download-4.jpg",
+      "Name": "HyperX Alloy FPS Pro Mechanical Gaming Keyboard",
+      "price": 69.99,
+      "category": "Keyboard",
+      "status": "instock",
+      "rating": 4.9
+    },
+    {
+      "id": 86,
+      "image": "https://i.ibb.co/1znQzpz/download-5.jpg",
+      "Name": "Ducky One 2 Mini Mechanical Keyboard",
+      "price": 109.99,
+      "category": "Keyboard",
+      "status": "instock",
+      "rating": 4.8
+    },
+    {
+      "id": 87,
+      "image": "https://i.ibb.co/VTrB0WM/download-6.jpg",
+      "Name": "Corsair K70 RGB MK.2 Mechanical Gaming Keyboard",
+      "price": 159.99,
+      "category": "Keyboard",
+      "status": "instock",
+      "rating": 4.7
+    },
+    {
+      "id": 88,
+      "image": "https://i.ibb.co/RhRBmqs/download-7.jpg",
+      "Name": "Razer BlackWidow Elite Mechanical Gaming Keyboard",
+      "price": 129.99,
+      "category": "Keyboard",
+      "status": "instock",
+      "rating": 4.6
+    },
+    {
+      "id": 89,
+      "image": "https://i.ibb.co/jbLN1pP/images.jpg",
+      "Name": "Logitech G915 LIGHTSPEED Wireless Mechanical Gaming Keyboard",
+      "price": 229.99,
+      "category": "Keyboard",
+      "status": "instock",
+      "rating": 4.5
+    },
+    {
+      "id": 90,
+      "image": "https://i.ibb.co/XFQ0sBv/images.png",
+      "Name": "SteelSeries Apex 7 TKL Mechanical Gaming Keyboard",
+      "price": 139.99,
+      "category": "Keyboard",
+      "status": "instock",
+      "rating": 4.4
+    },
+    {
+      "id": 91,
+      "image": "https://i.ibb.co/R43PpKN/images-1.jpg",
+      "Name": "Corsair K63 Compact Mechanical Gaming Keyboard",
+      "price": 79.99,
+      "category": "Keyboard",
+      "status": "instock",
+      "rating": 4.3
+    },
+    {
+      "id": 92,
+      "image": "https://i.ibb.co/w6FyJx3/images-2.jpg",
+      "Name": "Razer Ornata V2 Mecha-Membrane Gaming Keyboard",
+      "price": 99.99,
+      "category": "Keyboard",
+      "status": "instock",
+      "rating": 4.2
     }
   ]
 }

@@ -4,36 +4,36 @@ import React from "react";
 
 const categories = [
   {
-    name: "CPU",
-    link: "https://i.ibb.co/kMcqRWW/circuit-cyberspace-closeup-with-neon-lights.jpg",
+    category: "CPU",
+    link: "/cpu.jpg",
   },
   {
-    name: "Motherboard",
-    link: "https://i.ibb.co/kMcqRWW/circuit-cyberspace-closeup-with-neon-lights.jpg",
+    category: "Motherboard",
+    link: "/motherboard.jpg",
   },
   {
-    name: "RAM",
-    link: "https://i.ibb.co/kMcqRWW/circuit-cyberspace-closeup-with-neon-lights.jpg",
+    category: "RAM",
+    link: "/ram.jpg",
   },
   {
-    name: "Power Supply Unit",
-    link: "https://i.ibb.co/kMcqRWW/circuit-cyberspace-closeup-with-neon-lights.jpg",
+    category: "PSU",
+    link: "/psu.jpg",
   },
   {
-    name: "Storage Device",
-    link: "https://i.ibb.co/kMcqRWW/circuit-cyberspace-closeup-with-neon-lights.jpg",
+    category: "Storage",
+    link: "/storage.jpg",
   },
   {
-    name: "Monitor",
-    link: "https://i.ibb.co/kMcqRWW/circuit-cyberspace-closeup-with-neon-lights.jpg",
+    category: "Monitor",
+    link: "/monitor.jpg",
   },
   {
-    name: "Mouse",
-    link: "https://i.ibb.co/kMcqRWW/circuit-cyberspace-closeup-with-neon-lights.jpg",
+    category: "Mouse",
+    link: "/mouse.jpg",
   },
   {
-    name: "Keyboard",
-    link: "https://i.ibb.co/kMcqRWW/circuit-cyberspace-closeup-with-neon-lights.jpg",
+    category: "Keyboard",
+    link: "/keyboard.jpg",
   },
 ];
 
@@ -45,20 +45,18 @@ const FeaturedCategories: React.FC = () => {
       </h1>
       <div className="flex justify-center space-x-8 py-8 ">
         {categories.map((category) => (
-          <Link
-            key={category.name}
-            href={`/featuredCategory/${category.name}`}
-            passHref
-          >
-            <div className="group cursor-pointer">
-              <div className="relative w-32 h-32 bg-gray-200 rounded-lg shadow-md overflow-hidden ">
-                <Image src={category.link} fill alt="category name" />
+          <div key={category.category} className="">
+            <Link href={`/featuredCategory/${category.category}`} passHref>
+              <div className="group cursor-pointer hover:shadow-xl  rounded-lg">
+                <div className="relative w-32 h-32 bg-gray-200 rounded-lg shadow-md overflow-hidden ">
+                  <Image src={category.link} fill alt="category name" />
+                </div>
               </div>
-              <div className="mt-2 text-center text-blue-600 font-semibold group-hover:text-blue-800 transition duration-300">
-                {category.name}
+              <div className="mt-2 text-center text-blue-600 font-semibold group-hover:text-blue-800 transition duration-300 ">
+                {category.category}
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         ))}
       </div>
     </>

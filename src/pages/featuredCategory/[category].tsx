@@ -1,15 +1,48 @@
-import { useGetCpuQuery } from "@/redux/features/cart/CartAPi";
+import { cpu } from "@/components/type/cpu";
+import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
-function FeaturedCategory() {
-  const { data, error, isError, isFetching, isLoading, isSuccess } =
-    useGetCpuQuery(undefined);
+export const getStaticPaths: GetStaticPaths = async () => {
+  const res = await fetch("http://localhost:5000/data");
+  const data = await res.json();
 
+  const ids = data.map((product: cpu) => product.category.toString());
+
+  const paths = ids.map((category: string) => ({ params: { category } }));
+
+  return {
+    paths,
+    fallback: false, // or 'blocking' if you want to use blocking fallback
+  };
+};
+
+interface featuredProps {
+  data: cpu;
+}
+
+export const getStaticProps: GetStaticProps<featuredProps> = async ({
+  params,
+}) => {
+  // Fetch data for the specific product based on the 'id' parameter
+  const res = await fetch(`http://localhost:5000/data`);
+  const data = await res.json();
   console.log(data);
+
+  return {
+    props: { data },
+  };
+};
+
+function FeaturedCategory({ data }: { data: cpu[] }) {
+  const router = useRouter();
+  const { category } = router.query;
+
+  const newdata = data.filter((product) => product.category === category);
   return (
     <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-24 mx-auto w-full max-w-screen-xl ">
-      {data?.map((product: Cpu) => (
+      {newdata?.map((product: cpu) => (
         <div
           key={product?.id}
           className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
@@ -25,11 +58,11 @@ function FeaturedCategory() {
             </div>
 
             <div className="p-5">
-              <a href="#">
+              <Link href="#">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  {product?.productName}
+                  {product?.Name}
                 </h5>
-              </a>
+              </Link>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 Price: ${product?.price}
                 <br />

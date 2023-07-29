@@ -1,17 +1,35 @@
+// components/part/Home.tsx
 import Cart from "@/components/part/Cart";
 import FeaturedCategories from "@/components/part/FeaturedCategories";
-import { Inter } from "next/font/google";
+import { GetStaticProps } from "next";
 
-const inter = Inter({ subsets: ["latin"] });
+export type cpu = {
+  id: number;
+  image: string;
+  category: string;
+  price: number;
+  Name: string;
+  rating: number;
+  status: string;
+};
 
-const Home = () => {
+interface HomeProps {
+  data: cpu[];
+}
+
+const Home = ({ data }: HomeProps) => {
   return (
     <div className="mx-auto w-full max-w-screen-xl">
-      {/* <ImageSlider /> */}
-      <Cart />
+      <Cart data={data} />
       <FeaturedCategories />
     </div>
   );
+};
+
+export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+  const res = await fetch("http://localhost:5000/data");
+  const data = await res.json();
+  return { props: { data } };
 };
 
 export default Home;

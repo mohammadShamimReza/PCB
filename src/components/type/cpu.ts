@@ -1,9 +1,9 @@
-type Cpu = {
+export type cpu = {
   id: number;
   image: string;
   category: string;
   price: number;
-  productName: string;
+  Name: string;
   rating: number;
   status: string;
 };
