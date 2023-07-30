@@ -3,6 +3,9 @@ import Image from "next/image";
 
 function Profile() {
   const { data: session } = useSession();
+  // const [user, loading, error] = useAuthState(auth);
+  // console.log("from honse", user);
+
   const img = session?.user?.image || "";
   const alt = session?.user?.name || "";
   return (

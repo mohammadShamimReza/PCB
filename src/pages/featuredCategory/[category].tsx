@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import { useDispatch } from "react-redux";
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const res = await fetch("http://localhost:5000/data");
+  const res = await fetch("http://localhost:3000/api/getdata");
   const data = await res.json();
 
   const ids = data.map((product: cpu) => product.category.toString());
@@ -28,7 +28,7 @@ export const getStaticProps: GetStaticProps<featuredProps> = async ({
   params,
 }) => {
   // Fetch data for the specific product based on the 'id' parameter
-  const res = await fetch(`http://localhost:5000/data`);
+  const res = await fetch(`http://localhost:3000/api/getdata`);
   const data = await res.json();
 
   return {

@@ -1,10 +1,13 @@
 // components/Dropdown.tsx
+import auth from "@/firebase/firebase.auth";
 import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { RefObject, useEffect, useRef, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 const Dropdown = () => {
+  const [user, loading, error] = useAuthState(auth);
   const { data: session } = useSession();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef: RefObject<HTMLDivElement> = useRef(null);
@@ -48,13 +51,21 @@ const Dropdown = () => {
       </button>
       {isOpen && (
         <div className="absolute right-0 mt-2 py-2 w-48 bg-white border rounded-lg shadow-lg">
-          {!session?.user ? (
-            <Link
-              href="/login"
-              className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
-            >
-              Log in
-            </Link>
+          {!session?.user && !user?.email ? (
+            <>
+              <Link
+                href="/login"
+                className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
+              >
+                Log in
+              </Link>
+              <Link
+                href="/signUp"
+                className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
+              >
+                Signup
+              </Link>
+            </>
           ) : (
             <>
               <Link

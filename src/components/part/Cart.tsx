@@ -6,17 +6,9 @@ interface CartProps {
   data: cpu[];
 }
 
-// export const getStaticProps: GetStaticProps<{ data: cpu[] }> = async () => {
-//   const res = await fetch("http://localhost:5000/cpu");
-//   const data = await res.json();
-//   return { props: { data } };
-// };
+
 
 function Cart({ data }: CartProps) {
-  // const { data, error, isError, isFetching, isLoading, isSuccess } =
-  //   useGetCpuQuery(undefined);
-
-
   function getRandomNumber(min: number, max: number): number {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
@@ -33,7 +25,6 @@ function Cart({ data }: CartProps) {
   const dataWithRandomIds = data.filter((item) =>
     randomNumbers.includes(item.id)
   );
-
 
   return (
     <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-24 ">
