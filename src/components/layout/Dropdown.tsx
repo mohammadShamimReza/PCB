@@ -1,9 +1,11 @@
 // components/Dropdown.tsx
+import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { RefObject, useEffect, useRef, useState } from "react";
 
 const Dropdown = () => {
+  const { data: session } = useSession();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef: RefObject<HTMLDivElement> = useRef(null);
 
@@ -27,6 +29,10 @@ const Dropdown = () => {
     };
   }, []);
 
+  const handleLogOut = () => {
+    signOut();
+  };
+
   return (
     <div ref={dropdownRef} className="relative">
       <button
@@ -42,18 +48,29 @@ const Dropdown = () => {
       </button>
       {isOpen && (
         <div className="absolute right-0 mt-2 py-2 w-48 bg-white border rounded-lg shadow-lg">
-          <Link
-            href="#"
-            className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
-          >
-            Sign In
-          </Link>
-          <Link
-            href="#"
-            className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
-          >
-            Sign Up
-          </Link>
+          {!session?.user ? (
+            <Link
+              href="/login"
+              className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
+            >
+              Log in
+            </Link>
+          ) : (
+            <>
+              <Link
+                href="/Profile"
+                className="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
+              >
+                profile
+              </Link>
+              <button
+                onClick={() => handleLogOut()}
+                className="w-full text-left block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
+              >
+                log out
+              </button>
+            </>
+          )}
         </div>
       )}
     </div>

@@ -18,7 +18,7 @@ function BuildProduct({ category, data }: { category: string; data: cpu[] }) {
             href={`/featuredCategory/${category}`}
             className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-60"
           >
-            Add {category}
+            Choose {category}
             <svg
               className="w-3.5 h-3.5 ml-2"
               aria-hidden="true"

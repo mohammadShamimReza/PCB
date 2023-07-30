@@ -1,6 +1,7 @@
 import RootLayout from "@/components/layout/RootLayout";
 import { store } from "@/redux/store";
 import "@/styles/globals.css";
+import { SessionProvider } from "next-auth/react";
 import type { AppProps } from "next/app";
 import { useEffect, useState } from "react";
 import { Provider } from "react-redux";
@@ -18,12 +19,14 @@ export default function App({ Component, pageProps }: AppProps) {
     return <></>;
   } else {
     return (
-      <Provider store={store}>
-        <RootLayout>
-          {" "}
-          <Component {...pageProps} />
-        </RootLayout>
-      </Provider>
+      <SessionProvider session={pageProps.session}>
+        <Provider store={store}>
+          <RootLayout>
+            {" "}
+            <Component {...pageProps} />
+          </RootLayout>
+        </Provider>
+      </SessionProvider>
     );
   }
 }
