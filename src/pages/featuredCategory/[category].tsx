@@ -7,7 +7,10 @@ import { useRouter } from "next/router";
 import { useDispatch } from "react-redux";
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const res = await fetch("http://localhost:3000/api/getdata");
+ if (typeof window === "undefined") {
+   return { paths: [], fallback: false };
+ }
+ const res = await fetch(`${process.env.URL}/api/getdata`);
   const data = await res.json();
 
   const ids = data.map((product: cpu) => product.category.toString());
@@ -27,8 +30,11 @@ interface featuredProps {
 export const getStaticProps: GetStaticProps<featuredProps> = async ({
   params,
 }) => {
+  if (typeof window === "undefined") {
+    return { props: { data: [] } };
+  }
   // Fetch data for the specific product based on the 'id' parameter
-  const res = await fetch(`http://localhost:3000/api/getdata`);
+  const res = await fetch(`${process.env.URL}/api/getdata`);
   const data = await res.json();
 
   return {

@@ -27,7 +27,10 @@ const Home = ({ data }: HomeProps) => {
 };
 
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
-  const res = await fetch("http://localhost:3000/api/getdata");
+  if (typeof window === "undefined") {
+    return { props: { data: [] } };
+  }
+  const res = await fetch(`${process.env.URL}/api/getdata`);
   const data = await res.json();
   return { props: { data } };
 };

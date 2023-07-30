@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const res = await fetch("http://localhost:5000/data");
+  const res = await fetch(`${process.env.URL}/api/getdata`);
   const data = await res.json();
 
   const ids = data.map((product: cpu) => product.id.toString());
@@ -24,8 +24,11 @@ interface featuredProps {
 export const getStaticProps: GetStaticProps<featuredProps> = async ({
   params,
 }) => {
+  if (typeof window === "undefined") {
+    return { props: { data: [] } };
+  }
   // Fetch data for the specific product based on the 'id' parameter
-  const res = await fetch(`http://localhost:5000/data/${params?.id}`);
+  const res = await fetch(`${process.env.URL}/api/getdata?id=${params?.id}`);
   const data = await res.json();
 
   return {

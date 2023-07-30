@@ -29,9 +29,8 @@ export default async function handler(
         // Access the collection
         const collection = db.collection(collectionName);
 
-        // Query the collection (find document by 'id' field)
-        const data = await collection.findOne({ id: id });
-        console.log(data);
+        const data = await collection.findOne({ id: parseInt(id as string) });
+
 
         // Close the connection to the database
         client.close();
