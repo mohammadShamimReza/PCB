@@ -30,7 +30,7 @@ function Signup() {
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="w-full max-w-md p-6 bg-white rounded-md shadow-md">
         <h2 className="text-2xl font-semibold mb-4">Signup</h2>
-        {/* <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
             <label className="block text-gray-700">Email</label>
             <input
@@ -73,7 +73,7 @@ function Signup() {
           >
             Sign Up
           </button>
-        </form> */}
+        </form>
         <div className="mt-6">
           <p className="text-center mb-3">Already have account</p>
           <Link

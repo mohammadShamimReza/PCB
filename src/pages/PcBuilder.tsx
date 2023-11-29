@@ -45,10 +45,7 @@ interface featuredProps {
 }
 
 export const getStaticProps: GetStaticProps<featuredProps> = async () => {
-    if (typeof window === "undefined") {
-      return { props: { data: [] } };
-    }
-    const res = await fetch(`${process.env.URL}/api/getdata`);
+  const res = await fetch(`${process.env.URL}/api/getdata`);
   const data = await res.json();
 
   return {

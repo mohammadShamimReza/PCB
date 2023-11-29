@@ -43,16 +43,16 @@ const FeaturedCategories: React.FC = () => {
       <h1 className="mt-20 mb-12 text-center font-bold text-4xl underline">
         Categories
       </h1>
-      <div className="flex justify-center space-x-8 py-8 ">
+      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-24  ">
         {categories.map((category) => (
           <div key={category.category} className="">
             <Link href={`/featuredCategory/${category.category}`} passHref>
-              <div className="group cursor-pointer hover:shadow-xl  rounded-lg">
-                <div className="relative w-32 h-32 bg-gray-200 rounded-lg shadow-md overflow-hidden ">
+              <div className=" flex align-middle justify-center">
+                <div className="relative w-32 h-32 bg-gray-200 shadow-2xl overflow-hidden group cursor-pointer hover:shadow-xl  rounded-lg">
                   <Image src={category.link} fill alt="category name" />
                 </div>
               </div>
-              <div className="mt-2 text-center text-blue-600 font-semibold group-hover:text-blue-800 transition duration-300 ">
+              <div className=" text-center text-blue-600 font-semibold group-hover:text-blue-800 transition duration-300 ">
                 {category.category}
               </div>
             </Link>

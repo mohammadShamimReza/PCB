@@ -21,12 +21,7 @@ interface featuredProps {
   data: cpu;
 }
 
-export const getStaticProps: GetStaticProps<featuredProps> = async ({
-  params,
-}) => {
-  if (typeof window === "undefined") {
-    return { props: { data: [] } };
-  }
+export const getStaticProps: GetStaticProps<featuredProps> = async ({ params }) => {
   // Fetch data for the specific product based on the 'id' parameter
   const res = await fetch(`${process.env.URL}/api/getdata?id=${params?.id}`);
   const data = await res.json();
